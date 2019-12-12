@@ -1,26 +1,10 @@
-# AltaCV, yet another LaTeX CV/Résumé class
+# web前端工程师简历
 
-v1.1.4 (27 July 2018), by LianTze Lim (liantze@gmail.com)
-
-(Thanks to [Nur](https://github.com/nurh) for the name.)
-
-It all started with this:
-
-[<img src="tweet-that-started-this.png" width="500px">]
-(https://twitter.com/Leonduck/status/764281546408923136)
-
-Leonardo was talking about a [résumé of Marissa Mayer that Business Insider put together](http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/) using [enhancv.com](https://enhancv.com).
-I _knew_ I had to do something about it. And so AltaCV was born.
+v1.1.0 (12 Dec 2019), by Zhenzhen Cai (caizhenzhen94@outlook.com)
 
 ## Samples
 
-This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/read/gtqfpbwncfvp)):
-
-<img src="mmayer.png" alt="Marissa Mayer's résumé, re-created with AltaCV" width="600px">
-
-Though if you're creating your own CV/résumé, you'd probably prefer using the basic template ([view/open on Overleaf](https://www.overleaf.com/read/trgqjpwnmtgv)):
-
-<img src="sample.png" alt="sample barebones AltaCV template" width="600px">
+<img src="fontend-resume-zhenzhencai.png" alt="my resume" width="600px">
 
 
 ## Requirements and Compilation
