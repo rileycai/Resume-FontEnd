@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.1, 12 Dec 2019) written by Zhenzhen Cai (caizhenzhen94@outlook.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{CJK}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+
+
+%  个人信息模块
+\name{蔡真真}
+\tagline{ 求职意向: web前端开发工程师 }
+\photo{3.0cm}{personal}
+\personalinfo{
+  \email{caizhenzhen94@outlook.com }
+  \phone{176-0069-1591}
+  \homepage{\href{https://www.zcool.com.cn/u/1995353}{\textcolor{Mulberry}{zcool-design}}}
+  \github{\href{https://github.com/zhenzhencai/}{\textcolor{Mulberry}{github.com/zhenzhencai/}}}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+\end{CJK}
+
+
+\begin{CJK}{UTF8}{gbsn}
+\begin{CJK}{UTF8}{gkai}
+% 实习经历模块
+\cvsection[pagesidebar]{实习经历}
+\end{CJK}
+
+\cvevent{\textbf{字节跳动科技有限公司}}{头条研发·好好学习(原头条号技术)}{2019年5月-2019年10月}{北京}
+\begin{itemize}
+\item 参与头条主端精品课频道改版、需求维护、体验优化 - \textbf{React}。
+\item 参与精品课付费会员成长体系业务需求开发 - \textbf{Taro}。
+\item 业务中实现基于陀螺仪的会员卡片互动效果，并输出通用sdk。
+\item 基于业务需求设计封装\textbf{scroller组件库}，满足横向滑动，前置加载，滚动锚定等需求，同时支持回收Dom节点数优化内存占用。
+\item 参与工程化建设，输出\textbf{mr代码依赖关系分析工具}，上线前评估对核心模块的影响，完善上线流程。
+\end{itemize}
+
+
+
+\begin{CJK}{UTF8}{gkai}
+% 项目经历模块
+\cvsection{项目经历}
+\end{CJK}
+
+\cvevent{\textbf{基于内网数据的威胁情报可视分析系统}   \github{\href{https://github.com/zhenzhencai/ChinaVisProject}{\textcolor{Mulberry}{ChinaVis}}}}{}{2018年3月-2018年7月}{}
+\begin{itemize}
+\item ChinaVis2018年数据挑战赛一等奖作品。负责可视分析和前端开发。
+\item 使用 \textit{Echarts + D3 + Tableau} 实现多视图协同可视分析，对大量的多维异构数据进行聚类，总结有价值的威胁情报。
+\item 使用 \textit{vue} 搭建可视分析展示平台。将可复用的图形抽象成组件，引入随机id后缀解决同一图形复用问题，通过vuex实现\textbf{多视图数据联动}，采用\textbf{懒加载}的方式针对 \textit{Echarts} 大数据渲染时间长的问题进行优化。
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{威胁情报聚合查询和可视分析系统}   \github{\href{https://github.com/zhenzhencai/ThreatVis}{\textcolor{Mulberry}{ThreatVis}}}}{}{2016年12月-2017年7月}{}
+\begin{itemize}
+\item 负责可视分析模块开发。使用 \textit{D3 + Vue}  实现威胁情报多源异构数据的交互式关联钻取可视化，改进\textbf{力引导-退火}算法布局关联图形。
+\item 实现情报多维度查询功能，使用 \textit{webSocket} 实现全双工通信，使用 \textit{virtual list} 渲染可视区域的列表，实现长列表\textbf{性能优化}。
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{中央网信办网络安全应急指挥中心考勤管理系统}}{}{2018年12月-2019年4月}{}
+\begin{itemize}
+\item 基于 \textit{react+antd} 搭建的管理系统，独立负责前端开发。
+\item 使用 \textit{Rematch} 管理用户认证，动态路由实现用户权限配置。
+\item 使用 \textit{Echarts + D3} 可视化员工的考勤情况，实现\textbf{多视图联动分析}。
+\end{itemize}
+
+\medskip
+
+
+\begin{CJK}{UTF8}{gkai}
+% 获奖情况模块
+\cvsection{获奖情况}
+\end{CJK}
+
+\begin{itemize}
+\item \textbf{国家级}, 2014-2015学年&2015-2016学年 \textbf{国家奖学金}
+\item \textbf{国家级一等奖}, ChinaVis2018数据可视化挑战赛
+\item \textbf{国家级三等奖}, ChinaVis2017数据可视化挑战赛
+\item \textbf{国家级铜奖}, \textbf{省级金奖}, 首届中国“互联网+”大学生创新创业大赛
+\item \textbf{国家级二等奖}, \textbf{省级一等奖}, 第六届全国大学生数学竞赛
+\item \textbf{省级金奖}, “创青春”辽宁省大学生创新创业大赛（原挑战杯）
+\item \textbf{省级一等奖}, 辽宁省第二届普通高等学校大学生移动应用开发大赛
+\item \textbf{省级一等奖}, 第四届中国创新创业大赛暨第三届辽宁创新创业大赛
+\end{itemize}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+\end{CJK}
+\end{document}
+
