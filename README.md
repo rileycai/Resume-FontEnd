@@ -1,8 +1,12 @@
 # Fontend-Resume / web前端工程师简历
 
-v1.1.0 (12 Dec 2019), by Zhenzhen Cai (caizhenzhen94@outlook.com)
+v1.1.1 (24 Dec 2019), by Zhenzhen Cai (caizhenzhen94@outlook.com)
 
-Download my resume [download](https://github.com/zhenzhencai/Resume-FontEnd/raw/master/fontend-resume-zhenzhencai.pdf)
+Download my resume **[download](https://github.com/zhenzhencai/Resume-FontEnd/raw/master/fontend-resume-zhenzhencai.pdf)**
+
+Template source [link](https://www.overleaf.com/latex/templates/recreating-business-insiders-cv-of-marissa-mayer/gtqfpbwncfvp)
+
+Visit my interview materials **[Go->](https://github.com/zhenzhencai/FontEndInterview)**
 
 ## Samples
 
